@@ -1,33 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background: #3177fc;
+  color: #fff;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .App {
+  max-width: 1200px;
+  padding: 0 0.25rem;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  /* max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px; */
+}
+
+/* @media (min-width: 640px) {
+  .RetroBoard {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -0.25rem;
+  }
+  .RetroBoardCategory {
+    padding: 0 0.25rem;
+  }
+}
+
+.RetroBoardCategory {
+  flex: 1;
+}
+.RetroBoardCategory > .button {
+  width: 100%;
+  cursor: pointer;
+}
+.RetroBoardCategory > .button,
+.RetroBoardCategory > .Retro {
+  margin-bottom: 0.5rem;
+}
+
+.Retro {
+  color: white;
+  padding: 0.25rem;
+}
+.RetroBoardCategory-1 .Retro {
+  background-color: #01dd89;
+}
+.RetroBoardCategory-2 .Retro {
+  background-color: #f3316b;
+}
+.RetroBoardCategory-3 .Retro {
+  background-color: #c62fda;
+} 
+
+.button {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  line-height: 1;
+  padding: 0;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  /* border: 1; * /
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+}
+.button-new {
+  /* padding: 0.25rem; * /
+  /* background-color: #eee; * /
+  border-bottom: 3px solid #aaa;
+  width: 100%;
+  background: #ccc;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.button-new:hover,
+.button-new:active,
+.button-new:focus {
+  background-color: #ddd;
+  transition: 0.3s ease all;
+}
+.Retro .button {
+  background: transparent;
+  opacity: 0.65;
+  font-size: 0.75rem;
+  padding: 0.25rem;
+}
+.Retro .button:hover {
+  opacity: 1;
+}
+
+.ButtonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textbox {
+  font: inherit;
+  color: inherit;
+}
+.Retro .textbox {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  /* resize: vertical; * /
+  resize: none;
+}
+.Retro .textbox:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2)
+    url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDE2IDE2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNiAxNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05LDUuM0wxMC42LDdsLTQuMSw0LjFMNC45LDkuNUw5LDUuM3ogTTExLjgsNWwtMC43LTAuN2MtMC4zLTAuMy0wLjctMC4zLTEsMEw5LjQsNC45TDExLDYuNmwwLjgtMC44CgkJQzEyLjEsNS41LDEyLjEsNS4yLDExLjgsNXogTTQsMTEuOEM0LDExLjksNC4xLDEyLDQuMiwxMkw2LDExLjVMNC40LDkuOUw0LDExLjh6Ii8+CjwvZz4KPC9zdmc+Cg==")
+    top right/27px no-repeat;
+  cursor: pointer;
+}
+.Retro .textbox:active {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.Retro .textbox:active,
+.Retro .textbox:focus {
+  background-color: white;
+  color: #333;
+  cursor: auto;
+} */
+
+/* Styling the placeholder for each browser */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.65;
+}
+::-moz-placeholder {
+  color: inherit;
+  opacity: 0.65;
+}
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.65;
+}
+:-moz-placeholder {
+  color: inherit;
+  opacity: 0.65;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.BoardCntr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BoardCntr h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.BoardItem {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  color: #fff;
+  padding: 20px;
+}
+
+.BoardItem textarea {
+  background: transparent;
+  border: 0;
+  font-size: 1rem;
+  color: #fff;
+  min-height: 60px;
+  resize: none;
+  overflow: visible;
+}
+
+.BoardItem textarea::placeholder {
+  transition: 0.3s ease all;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.BoardItem textarea:focus::placeholder {
+  color: rgba(255, 255, 255, 0);
+  transition: 0.3s ease all;
+}
+
+.addButton {
+  width: 100%;
+  background: #ccc;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 3px solid #aaa;
+}
+
+.addButton:hover {
+  background: #ddd;
+  transition: 0.3s ease all;
+}
+
+.FunctionNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.FunctionNav button {
+  background: transparent;
+  border: none;
+  line-height: 1;
+  padding: 0;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.FunctionNav button:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s ease all;
+}
+
+.BoardCntr > * {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.flexform {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .submit-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+} */
+
+h1,
+h2,
+h3,
+h4 {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.btn-cntr {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button.ChangeLayout {
+  background: rgba(159, 214, 180, 0);
+  margin: 0 auto;
+  color: rgba(159, 214, 180, 1);
+  border: 1px solid rgba(159, 214, 180, 1);
+  padding: 10px 15px;
+  transition: 0.3s ease all;
 }
 
-.App-link {
-  color: #61dafb;
+button.ChangeLayout:hover {
+  color: #fff;
+  background: rgba(159, 214, 180, 1);
+  transition: 0.3s ease all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 
+MobLayout {
+  flex-wrap: wrap;
+}
+
+.MobLayout > * {
+  width: 100%;
+}
+.edit {
+  line-height: 12px;
+  width: 18px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+/* .Rotate-1 {
+  transform: rotate(-180deg);
+} */
+
+.Rotate-2 {
+  transform: rotate(180deg);
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+}
+.wentWell {
+  background: #01dd89;
+  margin: 5px;
+}
+
+.toImprove {
+  background: #f3316b;
+  margin: 5px;
+}
+
+.actionItems {
+  background: #c62fda;
+  margin: 5px;
 }
