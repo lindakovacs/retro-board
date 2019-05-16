@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Card from "./components/Card/Card";
+import Header from "./components/Header/Header";
 
 class App extends Component {
   state = {
@@ -118,13 +119,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>Retro Board</h2> <br />
+              <Header />
         <div className="btn-cntr">
           <button onClick={this.toggle.bind(this)} className="ChangeLayout">
             <i className="fas fa-bars" />
           </button>
         </div>
         <br />
+
+
+
         <div className="text-center">
           <div
             className={
